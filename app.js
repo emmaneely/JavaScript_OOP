@@ -61,10 +61,12 @@ console.log(person1);
 person1.greeting();
 person1.addHobby('sleeping');
 person1.removeHobby('gaming');
+
 const coder1 = new Coder('Jane Doe', 1, 'Los Angeles', ['coding', 'running', 'knitting']);
 console.log(coder1);
 coder1.greeting();
-
+coder1.addHobby('painting');
+coder1.removeHobby('knitting');
 
 // Exercise 4 Section
 console.log("EXERCISE 4:\n==========\n");
