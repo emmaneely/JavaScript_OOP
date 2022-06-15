@@ -70,3 +70,41 @@ coder1.removeHobby('knitting');
 
 // Exercise 4 Section
 console.log("EXERCISE 4:\n==========\n");
+
+class Calculator {
+    result = 0;
+
+    add(a, b) {
+        this.result = a + b;
+        return this.result;
+    }
+
+    subtract(a, b) {
+        this.result = a - b;
+        return this.result;
+    }
+
+    multiply(a, b) {
+        this.result = a * b;
+        return this.result;
+    }
+
+    divide(a, b) {
+        this.result = a / b;
+        return this.result;
+    }
+
+    displayResult() {
+        console.log(this.result);
+    }
+}
+
+let calc = new Calculator();
+calc.add(4, 2);
+calc.displayResult();
+calc.subtract(4, 2);
+calc.displayResult();
+calc.multiply(4, 2);
+calc.displayResult();
+calc.divide(4, 2);
+calc.displayResult();
