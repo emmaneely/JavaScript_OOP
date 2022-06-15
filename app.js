@@ -43,7 +43,15 @@ class Person {
 // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
 
-
+class Coder extends Person {
+    constructor(name, pets, residence, hobbies, occupation) {
+        super(name, pets, residence, hobbies);
+        this.occupation = 'Full Stack Web Developer';
+    }
+    greeting() {
+        console.log(`Hello ${this.occupation} ${this.name}!`);
+    }
+}
 
 // Exercise 3 Section
 console.log("EXERCISE 3:\n==========\n");
@@ -53,6 +61,9 @@ console.log(person1);
 person1.greeting();
 person1.addHobby('sleeping');
 person1.removeHobby('gaming');
+const coder1 = new Coder('Jane Doe', 1, 'Los Angeles', ['coding', 'running', 'knitting']);
+console.log(coder1);
+coder1.greeting();
 
 
 // Exercise 4 Section
